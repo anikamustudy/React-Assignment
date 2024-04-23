@@ -1,15 +1,16 @@
 import React from "react";
 import Product from "./Product";
 
-const ProductList = ({ products, onDelete, onEdit }) => {
+const ProductList = ({ products, onEdit, onDelete, onAdd }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
       {products.map((product) => (
         <Product
           key={product.id}
           product={product}
-          onDelete={onDelete}
           onEdit={onEdit}
+          onDelete={onDelete}
+          onAdd={onAdd}
         />
       ))}
     </div>

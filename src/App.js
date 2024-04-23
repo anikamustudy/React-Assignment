@@ -10,11 +10,10 @@ import ProductApp from "./Components/Product/ProductApp";
 const App = () => {
   return (
     <div>
-      <h1> Register Here</h1>
       {/*<Login /> */}
       {/* <Signup /> */}
       <AdminLogin />
-      <ProductApp/>
+      <ProductApp />
     </div>
   );
 };
